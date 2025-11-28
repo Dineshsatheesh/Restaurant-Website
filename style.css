@@ -1,0 +1,139 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #ff5722;
+    color: rgb(252, 252, 252);
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+header nav a {
+    margin: 0 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    height: 90vh;
+    background: url(img.table.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff5722;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about, .menu {
+    padding-left: 50px;
+    padding-top: 100px;
+    text-align: center;
+    background-color:white;
+
+}
+.reservation{
+    padding-left: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.item {
+    background: #e3ff0e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin-top: 10px;
+}
+
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input, .form-container button {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+   
+}
+
+.form-container button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    font-size: 17px;
+
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo{
+    font-family:cursive;
+    font-size: larger;
+}
+
